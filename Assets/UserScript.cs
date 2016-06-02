@@ -60,7 +60,11 @@ public class UserScript : NetworkBehaviour
     {
         print("make cube");
         GameObject c = (GameObject)Instantiate(myCubePrefab);
+
+
+        // 
         NetworkServer.Spawn(c);
+
         //NetworkServer.SpawnWithClientAuthority(c, connectionToClient);
     }
 
